@@ -120,16 +120,16 @@ export const TeamView: React.FC<TeamViewProps> = ({
     const labelT1 = team1Color ? `EQUIPO ${team1Color.toUpperCase()}` : 'EQUIPO A';
     const labelT2 = team2Color ? `EQUIPO ${team2Color.toUpperCase()}` : 'EQUIPO B';
 
-    const text = `📍 *CONVOCATORIA - PARTIDO CONFIRMADO*
+    const text = `📍 *PARTIDO CONFIRMADO*
 ━━━━━━━━━━━━━━━━━━━━━━
 ⚽ *Modalidad:* Fútbol ${mode}
 
-🟢 *${labelT1}* (${team1.length} jugadores)
+ *${labelT1}* 
 ──────────────────────
 ${formatTeamList(team1)}
 📊 *Potencia total:* ${totalStarsT1} ★
 
-🔵 *${labelT2}* (${team2.length} jugadores)
+ *${labelT2}* 
 ──────────────────────
 ${formatTeamList(team2)}
 📊 *Potencia total:* ${totalStarsT2} ★
